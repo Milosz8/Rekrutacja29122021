@@ -50,8 +50,6 @@ export default function ImgForm({ onLoad }) {
       tempImg.onload = () => {
         onLoad(tempImg.width, tempImg.height);
         // sprawdzenie aspect ratio
-        // console.log(tempImg.width);
-        // console.log(tempImg.height);
         if (tempImg.width === tempImg.height) {
           setSelectedImage(e.target.files[0]);
         } else {
@@ -77,7 +75,6 @@ export default function ImgForm({ onLoad }) {
         type="file"
         onChange={imageChange}
       />
-
       {selectedImage && (
         <ImgContainerPreview>
           <img src={URL.createObjectURL(selectedImage)} alt="Thumb" />

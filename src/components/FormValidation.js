@@ -12,7 +12,6 @@ const FormWrapper = styled.div`
   border: 4px solid black;
   font-family: sans-serif;
   background: pink;
-
   min-width: 430px;
 
   label {
@@ -49,7 +48,6 @@ const FormWrapper = styled.div`
   .submitBtn1 {
     margin: 1rem;
     border: 1px solid #ccc;
-
     padding: 6px 12px;
     cursor: pointer;
   }
@@ -71,7 +69,7 @@ export default function FormValidation() {
     reset();
   };
 
-  //walidacja rozmiaru zdjęcia (ratio)
+  
   const testImg = (w, h) => {};
 
   let x = /^([0-9]){11}?$/;
@@ -93,7 +91,6 @@ export default function FormValidation() {
         {errors.name && (
           <small className="text-danger">{errors.name.message}</small>
         )}
-
         <label>Nazwisko</label>
         <input
           type="text"
@@ -113,9 +110,7 @@ export default function FormValidation() {
           valuse={selects}
           onChange={(e) => {
             setSelects(e.target.value);
-
             selectElement.value = "";
-
             if (e.target.value !== "PESEL") {
               x = /^([0-9]){12}?$/;
               setCha(x);
@@ -126,6 +121,7 @@ export default function FormValidation() {
           }}
           selected="PESEL"
         >
+          
           <option value="PESEL">Osoba prywatna</option>
           <option value="NIP">Firma</option>
         </select>
