@@ -21,11 +21,11 @@ e) Zdjęcie ( Podgląd ma wyświetlić po wybraniu pliku z dysku)
 Dodatkowo Submit Forma ma wykonać na końcówkę  https://localhost:60001/Contractor/Save   i być jako POST Oczywiście ta końcówka zwróci kod błędu 404 i ma się wyświetlić komunikat użytkownikowi "Nie znaleziono metody zapisu"
 
  
-#instalacja :
-#1 
+# instalacja :
+# 1 
 npm install 
-#2
+# 2
 npm start
-#3
+# 3
 (opcjonalny) npm install react-hook-form
 
