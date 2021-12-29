@@ -27,5 +27,5 @@ npm install
 # 2
 npm start
 # 3
-(opcjonalny) npm install react-hook-form
+npm install react-hook-form
 
